@@ -494,8 +494,8 @@ button {
   font-size: clamp(1.5rem, 5vw, 2.25rem);
   font-weight: 700;
   text-align: center;
-  letter-spacing: 0.1rem;
-  margin-bottom: 2rem;
+  letter-spacing: 0.1125rem;
+  margin-bottom: 2.5rem;
 }
 
 /* ========================================
@@ -1020,11 +1020,11 @@ button {
 }
 
 .pricing__price-box {
-  max-width: 50rem;
-  margin: 0 auto 1rem;
+  max-width: 49.125rem;
+  margin: 0 auto 0.9375rem;
   border: 4px solid var(--primary-orange);
   border-radius: 0.625rem;
-  padding: 1.5rem 1rem;
+  padding: 1.875rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1035,14 +1035,29 @@ button {
 
 .pricing__label {
   background: var(--gradient-orange);
-  padding: 0.5rem 1.5rem;
+  padding: 0.625rem 1.875rem;
   border-radius: 0.3125rem;
   font-size: clamp(1rem, 4vw, 1.5rem);
   font-weight: 700;
   color: var(--white);
 }
 
+.pricing__price-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
 .pricing__amount {
+  font-family: 'Segoe UI', var(--font-main);
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pricing__yen {
   font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   background: var(--gradient-orange);
@@ -1060,29 +1075,46 @@ button {
   background-clip: text;
 }
 
+.pricing__tilde {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .pricing__note {
   text-align: center;
   font-size: clamp(0.75rem, 3vw, 0.9375rem);
   color: #36393e;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .pricing__courses {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.875rem;
 }
 
 .course-card {
   background-color: var(--white);
-  padding: 2rem 1.5rem;
-  width: 100%;
-  max-width: 24rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.875rem;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 23.75rem;
+}
+
+@media (min-width: 768px) {
+  .course-card {
+    width: auto;
+    max-width: none;
+  }
 }
 
 .course-card--basic {
@@ -1111,31 +1143,36 @@ button {
 
 .course-card__header {
   text-align: center;
-  width: 100%;
+  width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
 }
 
 .course-card__level {
-  font-size: clamp(0.875rem, 3vw, 1rem);
+  font-size: 1rem;
+  font-weight: 400;
   letter-spacing: 0.05rem;
-  margin-bottom: 0.625rem;
 }
 
 .course-card__name {
-  font-size: clamp(1.25rem, 5vw, 2rem);
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  white-space: nowrap;
 }
 
 .course-card__divider {
-  width: 11.5rem;
-  height: 2px;
-  background-color: currentColor;
+  width: 11.5625rem;
+  height: 1px;
+  background-color: rgb(195, 195, 195);
 }
 
 .course-card__details {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+  width: 16.9375rem;
 }
 
 .course-card__detail {
@@ -1145,12 +1182,15 @@ button {
 }
 
 .course-card__detail-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  flex-shrink: 0;
 }
 
 .course-card__detail-text {
-  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-size: clamp(1.125rem, 4vw, 1.5rem);
+  font-weight: 400;
+  color: var(--black);
 }
 
 /* ========================================
@@ -1633,8 +1673,13 @@ button {
   }
 
   /* Pricing */
+  .pricing {
+    padding: 5rem 0;
+  }
+
   .pricing__price-box {
     flex-direction: row;
+    height: 7.125rem;
     padding: 1.875rem 0;
     gap: 2.5rem;
   }
@@ -1642,11 +1687,6 @@ button {
   .pricing__courses {
     flex-direction: row;
     gap: 1.875rem;
-  }
-
-  .course-card {
-    padding: 2.5rem;
-    max-width: 23.75rem;
   }
 
   .course-card__detail-icon {
