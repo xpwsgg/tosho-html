@@ -477,8 +477,20 @@ button {
    ======================================== */
 .about {
   padding: 5rem 0 7.5rem;
-  background: url('../images/about-bg.svg') top center/100% auto no-repeat;
+  position: relative;
   background-color: var(--gray-light);
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 10.9375rem);
+  background: url('../images/about-bg.svg') top center/100% 100% no-repeat;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .about__header {
@@ -488,6 +500,8 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 0.44rem;
+  position: relative;
+  z-index: 1;
 }
 
 .about__logo {
@@ -514,6 +528,8 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .about__text {
