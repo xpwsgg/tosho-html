@@ -1291,7 +1291,7 @@ button {
    Flow Section - Mobile First
    ======================================== */
 .flow {
-  padding: var(--section-padding-mobile);
+  padding: 5rem 0 7.5rem;
 }
 
 .flow__list {
@@ -1303,9 +1303,10 @@ button {
 
 .flow__item {
   width: 100%;
-  max-width: 19rem;
+  max-width: 19.375rem;
+  height: 19.125rem;
   position: relative;
-  padding-top: 1.75rem;
+  padding-top: 1.5rem;
 }
 
 .flow__item-number {
@@ -1327,7 +1328,8 @@ button {
 }
 
 .flow__item-content {
-  padding: 2.5rem 1rem 1.5rem;
+  height: 100%;
+  padding: 3.125rem 0.9375rem 1.875rem;
   background-color: var(--white);
   border: 4px solid var(--primary-orange);
   border-radius: 0.625rem;
@@ -1335,24 +1337,28 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
 .flow__item-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 4.9375rem;
+  height: 4.875rem;
+  flex-shrink: 0;
 }
 
 .flow__item-title {
-  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.0625rem;
+  white-space: nowrap;
 }
 
 .flow__item-text {
-  font-size: clamp(0.875rem, 3vw, 1rem);
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.8;
   letter-spacing: 0.05rem;
+  width: 16.25rem;
 }
 
 /* ========================================
@@ -1712,18 +1718,14 @@ button {
   }
 
   /* Flow */
-  .flow {
-    padding: 5rem 0 7.5rem;
-  }
-
   .flow__list {
     flex-direction: row;
+    justify-content: center;
     gap: 1.25rem;
   }
 
-  .flow__item-icon {
-    width: 4.9375rem;
-    height: 4.875rem;
+  .flow__item {
+    max-width: 19.375rem;
   }
 
   /* FAQ */
