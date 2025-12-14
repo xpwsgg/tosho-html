@@ -485,8 +485,9 @@ button {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
   height: calc(100% + 10.9375rem);
   background: url('../images/about-bg.svg') top center/100% 100% no-repeat;
   z-index: 0;
@@ -594,7 +595,7 @@ button {
    ======================================== */
 .testimonials {
   padding: var(--section-padding-mobile);
-  background-color: var(--white);
+  background-color: transparent;
   position: relative;
   overflow: hidden;
 }
