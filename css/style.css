@@ -1866,20 +1866,6 @@ button {
     padding: 7.5rem 0 5rem;
   }
 
-  .support__bg-text {
-    display: block;
-    position: absolute;
-    right: -10rem;
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg);
-    font-family: var(--font-barlow);
-    font-size: 10rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.2);
-    letter-spacing: 0.1rem;
-    white-space: nowrap;
-  }
-
   .support__list {
     flex-direction: row;
     justify-content: center;
