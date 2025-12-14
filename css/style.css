@@ -1437,12 +1437,15 @@ button {
   width: 2.5rem;
   height: 2.5rem;
   flex-shrink: 0;
+  object-fit: contain;
+  display: block;
 }
 
 .journey__step-title {
   font-size: clamp(0.875rem, 3.5vw, 1.25rem);
   font-weight: 700;
   letter-spacing: 0.0625rem;
+  white-space: nowrap;
 }
 
 .journey__step-text {
