@@ -21,7 +21,7 @@
   --gradient-orange: linear-gradient(90deg, #bf5331 0%, #ef6a5a 100%);
   --gradient-gold: linear-gradient(73.06deg, rgba(198, 174, 109, 0.4) 2.76%, rgba(231, 222, 185, 0.4) 52.27%, rgba(202, 182, 126, 0.4) 95.93%);
   --gradient-cream: linear-gradient(34deg, rgb(230, 222, 199) 2.76%, rgb(239, 235, 219) 52.27%, rgb(230, 222, 199) 95.93%);
-  --gradient-background: linear-gradient(90deg, #f6f6f6 18%, #ffffff 45%, #f6f6f6 76%, #ffffff 100%);
+  --gradient-background: #ffffff;
 
   /* 字体 */
   --font-main: 'Noto Sans JP', sans-serif;
