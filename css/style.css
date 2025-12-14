@@ -967,9 +967,25 @@ button {
    ======================================== */
 .support {
   padding: 4rem 0;
-  background: var(--gradient-orange);
+  background-color: var(--white);
   position: relative;
   overflow: hidden;
+}
+
+.support::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/support-bg.svg') center/cover no-repeat;
+  z-index: 0;
+}
+
+.support > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .support__bg-text {
