@@ -53,8 +53,15 @@
          ======================================== -->
     <section class="hero">
       <div class="hero__background">
-        <img src="images/hero-left.jpg" alt="" class="hero__bg-image hero__bg-image--left">
-        <img src="images/hero-right.jpg" alt="" class="hero__bg-image hero__bg-image--right">
+        <!-- 右侧背景图（先渲染，在底层） -->
+        <div class="hero__bg-container--right">
+          <img src="images/hero-right.jpg" alt="" class="hero__bg-image hero__bg-image--right">
+        </div>
+        <!-- 左侧背景图（后渲染，在上层） -->
+        <div class="hero__bg-container--left">
+          <img src="images/hero-left.jpg" alt="" class="hero__bg-image hero__bg-image--left">
+        </div>
+        <!-- 中间白色渐变遮罩 -->
         <div class="hero__bg-overlay"></div>
       </div>
       <div class="hero__content">
@@ -68,10 +75,12 @@
           </div>
           <div class="hero__dots">・・</div>
         </div>
-        <p class="hero__subtitle">未経験から最短で</p>
+        <p class="hero__subtitle">
+          <img src="images/hero-sparkle.svg" alt="" class="hero__sparkle">
+          未経験から最短で
+        </p>
         <div class="hero__title-wrapper">
-          <span class="hero__title">即戦力</span>
-          <span class="hero__title-particle">の</span>
+          <span class="hero__title">即戦力</span><span class="hero__title-particle">の</span>
         </div>
         <p class="hero__description">Webデザイナーに</p>
         <div class="hero__features">
