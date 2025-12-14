@@ -684,10 +684,10 @@ button {
 .cta-banner::before {
   content: '';
   position: absolute;
-  top: -62%;
+  top: -106.59%;
   left: 0;
-  width: 114%;
-  height: 172%;
+  width: 100%;
+  height: 296.12%;
   background: url('../images/cta-bg.png') left center/cover no-repeat;
   z-index: 0;
 }
@@ -730,8 +730,9 @@ button {
 .cta-banner__bubble {
   background-color: var(--white);
   padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: var(--black);
+  box-shadow: 2px 2px 0 #DA6C5E;
 }
 
 .cta-banner__bubble-text {
