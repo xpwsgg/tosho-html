@@ -434,7 +434,7 @@ button {
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
-  background: var(--gradient-background);
+  background-color: var(--white);
 }
 
 .cta-button-wrapper {
@@ -478,7 +478,7 @@ button {
 .about {
   padding: 5rem 0 7.5rem;
   position: relative;
-  background-color: var(--gray-light);
+  background-color: var(--white);
 }
 
 .about::before {
@@ -592,6 +592,7 @@ button {
    ======================================== */
 .testimonials {
   padding: var(--section-padding-mobile);
+  background-color: var(--white);
 }
 
 .testimonials__list {
