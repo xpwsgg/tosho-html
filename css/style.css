@@ -703,6 +703,15 @@ button {
   z-index: 1;
 }
 
+/* CTA Banner Alt - 使用不同的背景图片（node 1-395） */
+.cta-banner--alt::before {
+  top: -62.37%;
+  left: 0;
+  width: 113.83%;
+  height: 172.19%;
+  background: url('../images/cta-bg-2.png') left center/cover no-repeat;
+}
+
 .cta-banner > .container {
   position: relative;
   z-index: 2;
@@ -733,6 +742,11 @@ button {
   border-radius: 1rem;
   color: var(--black);
   box-shadow: 2px 2px 0 #DA6C5E;
+}
+
+/* CTA Banner Alt 气泡 - 灰色阴影（node 1-395） */
+.cta-banner--alt .cta-banner__bubble {
+  box-shadow: 2px 2px 0 #333333;
 }
 
 .cta-banner__bubble-text {
