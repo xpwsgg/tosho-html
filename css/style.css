@@ -476,47 +476,58 @@ button {
    About Section - Mobile First
    ======================================== */
 .about {
-  padding: 3rem 0 4rem;
-  background: linear-gradient(180deg, #e7d9b8 0%, #f0e8d3 50%, #f8f8f8 100%);
+  padding: 5rem 0 7.5rem;
+  background: url('../images/about-bg.svg') top center/100% auto no-repeat;
+  background-color: var(--gray-light);
 }
 
 .about__header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.44rem;
 }
 
 .about__logo {
-  width: 4rem;
-  height: 2.5rem;
-  margin: 0 auto 0.5rem;
+  width: 5.0625rem;
+  height: 3.125rem;
+  margin: 0;
+}
+
+.about__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .about__title {
-  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  font-size: 2.25rem;
   font-weight: 700;
   color: var(--black);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1125rem;
 }
 
 .about__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
+  gap: 0.625rem;
+  align-items: flex-start;
 }
 
 .about__text-highlight {
   background-color: var(--black);
   color: var(--white);
-  padding: 0.25rem 0.625rem;
-  font-size: clamp(1.25rem, 5vw, 2.125rem);
+  padding: 0.3125rem 0.625rem;
+  font-size: 2.125rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   display: inline-block;
@@ -527,21 +538,20 @@ button {
   align-items: center;
   gap: 0.25rem;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .about__text-normal {
-  font-size: clamp(1.25rem, 5vw, 2.125rem);
+  font-size: 2.125rem;
   font-weight: 700;
   color: var(--black);
   letter-spacing: 0.1rem;
 }
 
 .about__image {
-  width: 100%;
-  max-width: 24rem;
-  aspect-ratio: 382 / 263;
-  box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+  width: 23.875rem;
+  height: 16.4375rem;
+  box-shadow: 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
 }
 
 .about__image img {
@@ -1712,13 +1722,10 @@ button {
   }
 
   /* About */
-  .about {
-    padding: 5rem 0 7.5rem;
-  }
-
   .about__content {
     flex-direction: row;
     gap: 2.5rem;
+    justify-content: center;
   }
 
   .about__text {
