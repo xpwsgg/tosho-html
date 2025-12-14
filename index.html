@@ -3,709 +3,777 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ChapterTwo デザインコース | 未経験から即戦力のWebデザイナーに</title>
-  <meta name="description" content="ChapterTwoは卒業後も一生続くサポートで、未経験から最短で即戦力のWebデザイナーを育成します。">
+  <title>ChapterTwo デザインコース | 卒業後サポートが一生続くWebデザインスクール</title>
+  <meta name="description" content="ChapterTwoは、未経験から最短で即戦力のWebデザイナーになれるスクール。卒業後も永続的にサポート。案件紹介、制作サポート完備。">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&family=Barlow:wght@400;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- ヘッダー -->
-  <header class="header" id="header">
-    <div class="header__inner">
-      <a href="#" class="header__logo">
-        <img src="images/logo.svg" alt="ChapterTwo" width="81" height="50">
-      </a>
-      <nav class="header__nav" id="nav">
-        <ul class="header__nav-list">
-          <li><a href="#voice">受講者の声</a></li>
-          <li><a href="#reason">選ばれる理由</a></li>
-          <li><a href="#price">受講料金</a></li>
-          <li><a href="#flow">受講の流れ</a></li>
-          <li><a href="#faq">よくあるご質問</a></li>
-        </ul>
-        <a href="#contact" class="header__cta">Zoom無料相談はこちら</a>
-      </nav>
-      <button class="header__menu-btn" id="menuBtn" aria-label="メニュー">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+  <!-- ========================================
+       Header
+       ======================================== -->
+  <header class="header">
+    <a href="#" class="header__logo">
+      <img src="images/logo-white.png" alt="ChapterTwo">
+    </a>
+    <nav class="header__nav">
+      <a href="#testimonials" class="header__nav-link">受講者の声</a>
+      <a href="#reasons" class="header__nav-link">選ばれる理由</a>
+      <a href="#pricing" class="header__nav-link">受講料金</a>
+      <a href="#flow" class="header__nav-link">受講の流れ</a>
+      <a href="#faq" class="header__nav-link">よくあるご質問</a>
+      <a href="#" class="header__cta">Zoom無料相談はこちら</a>
+    </nav>
   </header>
 
-  <main>
-    <!-- ヒーローセクション -->
-    <section class="hero">
-      <div class="hero__bg">
-        <div class="hero__bg-image hero__bg-image--left"></div>
-        <div class="hero__bg-image hero__bg-image--right"></div>
-        <div class="hero__bg-gradient"></div>
-      </div>
-      <div class="hero__content">
-        <div class="hero__badge">
-          <span class="hero__badge-dots">・・</span>
+  <!-- ========================================
+       Hero Section
+       ======================================== -->
+  <section class="hero">
+    <div class="hero__background">
+      <img src="images/hero-left.jpg" alt="" class="hero__bg-image hero__bg-image--left">
+      <img src="images/hero-right.jpg" alt="" class="hero__bg-image hero__bg-image--right">
+      <div class="hero__bg-overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge-wrapper">
+        <div class="hero__badge-bg">
           <div class="hero__badge-text">
             <span>卒業後サポートが</span>
-            <em>一生</em>
+            <span class="hero__support-highlight">一生</span>
             <span>続く！</span>
           </div>
         </div>
-        <h1 class="hero__title">
-          <span class="hero__title-sub">未経験から最短で</span>
-          <span class="hero__title-main"><em>即戦力</em><span>の</span></span>
-          <span class="hero__title-bottom">Webデザイナーに</span>
-        </h1>
-        <div class="hero__features">
-          <div class="hero__feature">
-            <span>最短2ヶ月で</span>
-            <span>副業開始できる！</span>
-          </div>
-          <div class="hero__feature">
-            <span>案件紹介</span>
-            <span>制作サポート完備！</span>
-          </div>
+        <div class="hero__dots">・・</div>
+      </div>
+      <p class="hero__subtitle">未経験から最短で</p>
+      <div class="hero__title-wrapper">
+        <span class="hero__title">即戦力</span>
+        <span class="hero__title-particle">の</span>
+      </div>
+      <p class="hero__description">Webデザイナーに</p>
+      <div class="hero__features">
+        <div class="hero__feature">
+          <p class="hero__feature-text">最短2ヶ月で<br>副業開始できる！</p>
+        </div>
+        <div class="hero__feature">
+          <p class="hero__feature-text">案件紹介<br>制作サポート完備！</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CTA セクション -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-box">
-          <p class="cta-box__label">10秒で簡単予約！質問相談何でもOK！</p>
-          <a href="#contact" class="cta-box__btn">Zoom無料相談はこちら</a>
+  <!-- ========================================
+       CTA Button Section
+       ======================================== -->
+  <section class="cta-section">
+    <div class="cta-button-wrapper">
+      <span class="cta-label">10秒で簡単予約！質問相談何でもOK！</span>
+      <a href="#" class="cta-button">Zoom無料相談はこちら</a>
+    </div>
+  </section>
+
+  <!-- ========================================
+       About Section
+       ======================================== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about__header">
+        <div class="about__logo">
+          <img src="images/logo-dark.png" alt="ChapterTwo">
+        </div>
+        <h2 class="about__title">デザインコースとは？</h2>
+      </div>
+      <div class="about__content">
+        <div class="about__text">
+          <span class="about__text-highlight">卒業後が"スタート"</span>
+          <div class="about__text-row">
+            <span class="about__text-highlight">稼ぐサポート</span>
+            <span class="about__text-normal">が一生続く</span>
+          </div>
+          <span class="about__text-normal">Webデザインスクール</span>
+        </div>
+        <div class="about__image">
+          <img src="images/about-image.jpg" alt="ChapterTwo デザインコース">
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- デザインコースとは -->
-    <section class="about" id="about">
-      <div class="about__bg"></div>
-      <div class="container">
-        <div class="about__header">
-          <img src="images/logo.svg" alt="ChapterTwo" class="about__logo" width="81" height="50">
-          <h2 class="about__title">デザインコースとは？</h2>
-        </div>
-        <div class="about__content">
-          <div class="about__text">
-            <p class="about__catch">
-              <span class="about__catch-highlight">卒業後が"スタート"</span>
-            </p>
-            <p class="about__catch">
-              <span class="about__catch-highlight">稼ぐサポート</span>
-              <span>が一生続く</span>
-            </p>
-            <p class="about__catch-sub">Webデザインスクール</p>
+  <!-- ========================================
+       Testimonials Section
+       ======================================== -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">受講者の声</h2>
+      <div class="testimonials__list">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <div class="testimonial__image">
+            <img src="images/testimonial-1.jpg" alt="M.Sさん">
           </div>
-          <div class="about__image">
-            <img src="images/about-image.jpg" alt="デザイン制作の様子" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 受講者の声 -->
-    <section class="voice" id="voice">
-      <div class="voice__decoration">CHAPTER TWO</div>
-      <div class="container">
-        <h2 class="section-title">受講者の声</h2>
-        <div class="voice__list">
-          <!-- 受講者1 -->
-          <article class="voice-card">
-            <div class="voice-card__image">
-              <img src="images/voice-1.jpg" alt="M.Sさん" loading="lazy">
+          <div class="testimonial__content">
+            <div class="testimonial__title-wrapper">
+              <span class="testimonial__title">未経験から</span>
+              <span class="testimonial__title">プロのWebデザイナーに！</span>
             </div>
-            <div class="voice-card__content">
-              <div class="voice-card__header">
-                <p class="voice-card__title-line">未経験から</p>
-                <p class="voice-card__title-line">プロのWebデザイナーに！</p>
+            <p class="testimonial__text">未経験の不安も、専属メンターの伴走と無制限の質問添削で解消。実務目線のフィードバックで、稼ぐ基礎が着実に身につきました。卒業後のサポートも心強く、商談同席も安心でした。</p>
+            <p class="testimonial__author">M.Sさん</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial testimonial--reverse">
+          <div class="testimonial__image">
+            <img src="images/testimonial-2.jpg" alt="T.Yさん">
+          </div>
+          <div class="testimonial__content">
+            <div class="testimonial__title-wrapper">
+              <span class="testimonial__title">専業主婦から</span>
+              <span class="testimonial__title">Webデザイナーとして独立！</span>
+            </div>
+            <p class="testimonial__text">育児と家事の合間でも、録画で何度も復習できて安心。分からない所は無制限で質問でき、丁寧な添削で一歩ずつ前進。未経験でも迷わず続けられました。卒業後も質問できて心強い。</p>
+            <p class="testimonial__author">T.Yさん</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <div class="testimonial__image">
+            <img src="images/testimonial-3.jpg" alt="K.Rさん">
+          </div>
+          <div class="testimonial__content">
+            <div class="testimonial__title-wrapper">
+              <span class="testimonial__title">スキマ時間で学び</span>
+              <span class="testimonial__title">フリーランスに転身！</span>
+            </div>
+            <p class="testimonial__text">土日に集中学習、平日はスキマで復習。継続できたのは、即レスの質問サポートと添削のおかげ。録画講義で復習し、卒業後も相談でき、ゼロからでも仕事につながる力が養えました。</p>
+            <p class="testimonial__author">K.Rさん</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CTA Banner Section 1
+       ======================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__bubbles">
+        <div class="cta-banner__bubble">
+          <p class="cta-banner__bubble-text">未経験からでも<br>大丈夫？</p>
+        </div>
+        <div class="cta-banner__bubble">
+          <p class="cta-banner__bubble-text">自分には<br>どのコースが合ってる？</p>
+        </div>
+      </div>
+      <h2 class="cta-banner__title">無料相談実施中！</h2>
+      <div class="cta-banner__underline"></div>
+      <p class="cta-banner__subtitle">プロのカウンセラーになんでも相談可能！</p>
+      <div class="cta-button-wrapper">
+        <span class="cta-label">10秒で簡単予約！質問相談何でもOK！</span>
+        <a href="#" class="cta-button">Zoom無料相談はこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Reasons Section
+       ======================================== -->
+  <section id="reasons" class="reasons">
+    <div class="container">
+      <div class="reasons__header">
+        <h2 class="reasons__title">
+          ChapterTwoが選ばれる<br>
+          <span class="reasons__title-number">3</span><span class="reasons__title-text">つの理由</span>
+        </h2>
+        <div class="reasons__divider"></div>
+      </div>
+      <div class="reasons__list">
+        <!-- Reason 1 -->
+        <div class="reason">
+          <div class="reason__background"></div>
+          <div class="reason__content reason__content--left">
+            <h3 class="reason__title">Web制作サービス<br>「びるどる」と提携し<br>卒業後の活動をサポート</h3>
+            <p class="reason__text">ChapterTwoは、Web制作サービス「びるどる」と提携しています。卒業後はびるどるの「認定パートナー」として、Webデザイン案件を優先的に紹介してもらうことが可能です。</p>
+          </div>
+          <div class="reason__visual reason__visual--left">
+            <div>
+              <span class="reason__number">01</span>
+              <span class="reason__label">Support</span>
+            </div>
+            <div class="reason__image">
+              <img src="images/reason-1.jpg" alt="Support">
+            </div>
+          </div>
+        </div>
+
+        <!-- Reason 2 -->
+        <div class="reason">
+          <div class="reason__background"></div>
+          <div class="reason__content reason__content--right">
+            <h3 class="reason__title">案件をもとにしたカリキュラムで<br>実践的スキルを身に着けて<br>すぐに副業開始可能</h3>
+            <p class="reason__text">提携サービス「びるどる」が過去実際に受注した案件をもとにカリキュラムを作成しており、他のスクールではできない超実践的なスキル習得が可能です。そのため、卒業後はすぐに「びるどる」の案件を受けることができます。</p>
+          </div>
+          <div class="reason__visual reason__visual--right">
+            <div style="text-align: right;">
+              <span class="reason__number">02</span>
+              <span class="reason__label">Curriculum</span>
+            </div>
+            <div class="reason__image">
+              <img src="images/reason-2.jpg" alt="Curriculum">
+            </div>
+          </div>
+        </div>
+
+        <!-- Reason 3 -->
+        <div class="reason">
+          <div class="reason__background"></div>
+          <div class="reason__content reason__content--left">
+            <h3 class="reason__title">専属メンターが<br>入学から稼げるまで伴走し<br>挫折させない万全のサポート</h3>
+            <p class="reason__text">入学してから稼げるようになるまで、専属のメンターがマンツーマンで伴走。挫折せずに最後まで学習できるよう、全力でサポートいたします。</p>
+          </div>
+          <div class="reason__visual reason__visual--left">
+            <div>
+              <span class="reason__number">03</span>
+              <span class="reason__label">Mentor</span>
+            </div>
+            <div class="reason__image">
+              <img src="images/reason-3.jpg" alt="Mentor">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Support Section
+       ======================================== -->
+  <section class="support">
+    <span class="support__bg-text">CHAPTER TWO</span>
+    <div class="container">
+      <h2 class="support__title">ChapterTwoの<br>案件獲得サポート</h2>
+      <div class="support__list">
+        <!-- Support Item 1 -->
+        <div class="support__item">
+          <div class="support__item-image">
+            <span class="support__item-number">01</span>
+            <img src="images/support-1.jpg" alt="案件紹介">
+          </div>
+          <div class="support__item-content">
+            <h3 class="support__item-title">提携サイト「びるどる」<br>からの案件紹介</h3>
+            <p class="support__item-text">提携しているWebデザイン制作サービスの「びるどる」から案件を紹介するため、卒業後すぐに副業で稼ぎ始められます！</p>
+          </div>
+        </div>
+
+        <!-- Support Item 2 -->
+        <div class="support__item">
+          <div class="support__item-image">
+            <span class="support__item-number">02</span>
+            <img src="images/support-2.jpg" alt="営業不要">
+          </div>
+          <div class="support__item-content">
+            <h3 class="support__item-title">営業は完全に不要</h3>
+            <p class="support__item-text">卒業生に紹介される案件は、受注までのクライアントワークをすべて「びるどる」が行って確実に受注に繋げるため、卒業生は営業不要で案件を獲得できる仕組みです。</p>
+          </div>
+        </div>
+
+        <!-- Support Item 3 -->
+        <div class="support__item">
+          <div class="support__item-image">
+            <span class="support__item-number">03</span>
+            <img src="images/support-3.jpg" alt="サポート">
+          </div>
+          <div class="support__item-content">
+            <h3 class="support__item-title">サポートセンターが<br>制作を全面サポート</h3>
+            <p class="support__item-text">紹介された案件の進め方でわからない部分があれば、専門のサポートセンターが制作をサポートし、確実な納品と報酬の獲得をお手伝いします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Instructors Section
+       ======================================== -->
+  <section class="instructors">
+    <div class="container">
+      <h2 class="section-title">講師紹介</h2>
+      <div class="instructors__carousel">
+        <div class="instructors__arrow instructors__arrow--prev">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M24 36L12 24L24 12" stroke="#bf5331" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="instructors__list">
+          <!-- Instructor 1 -->
+          <div class="instructor">
+            <div class="instructor__header">
+              <div class="instructor__info">
+                <h3 class="instructor__name">長田 圭二先生</h3>
+                <span class="instructor__name-en">Nagata Keiji</span>
               </div>
-              <p class="voice-card__text">未経験の不安も、専属メンターの伴走と無制限の質問添削で解消。実務目線のフィードバックで、稼ぐ基礎が着実に身につきました。卒業後のサポートも心強く、商談同席も安心でした。</p>
-              <p class="voice-card__name">M.Sさん</p>
-            </div>
-          </article>
-          <!-- 受講者2 -->
-          <article class="voice-card voice-card--reverse">
-            <div class="voice-card__image">
-              <img src="images/voice-2.jpg" alt="T.Yさん" loading="lazy">
-            </div>
-            <div class="voice-card__content">
-              <div class="voice-card__header">
-                <p class="voice-card__title-line">専業主婦から</p>
-                <p class="voice-card__title-line">Webデザイナーとして独立！</p>
+              <div class="instructor__image">
+                <img src="images/instructor-1.jpg" alt="長田 圭二先生">
               </div>
-              <p class="voice-card__text">育児と家事の合間でも、録画で何度も復習できて安心。分からない所は無制限で質問でき、丁寧な添削で一歩ずつ前進。未経験でも迷わず続けられました。卒業後も質問できて心強い。</p>
-              <p class="voice-card__name">T.Yさん</p>
             </div>
-          </article>
-          <!-- 受講者3 -->
-          <article class="voice-card">
-            <div class="voice-card__image">
-              <img src="images/voice-3.jpg" alt="K.Rさん" loading="lazy">
-            </div>
-            <div class="voice-card__content">
-              <div class="voice-card__header">
-                <p class="voice-card__title-line">スキマ時間で学び</p>
-                <p class="voice-card__title-line">フリーランスに転身！</p>
-              </div>
-              <p class="voice-card__text">土日に集中学習、平日はスキマで復習。継続できたのは、即レスの質問サポートと添削のおかげ。録画講義で復習し、卒業後も相談でき、ゼロからでも仕事につながる力が養えました。</p>
-              <p class="voice-card__name">K.Rさん</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA セクション -->
-    <section class="cta-section cta-section--dark">
-      <div class="container">
-        <div class="cta-box cta-box--light">
-          <p class="cta-box__label">10秒で簡単予約！質問相談何でもOK！</p>
-          <a href="#contact" class="cta-box__btn">Zoom無料相談はこちら</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 選ばれる理由 -->
-    <section class="reason" id="reason">
-      <div class="container">
-        <div class="reason__header">
-          <h2 class="reason__title">ChapterTwoが選ばれる<br>3つの理由</h2>
-          <div class="reason__line"></div>
-        </div>
-        <div class="reason__list">
-          <!-- 理由1 -->
-          <article class="reason-card">
-            <div class="reason-card__number">
-              <span class="reason-card__num">01</span>
-              <span class="reason-card__label">Mentor</span>
-            </div>
-            <div class="reason-card__image">
-              <img src="images/reason-1.jpg" alt="メンターサポート" loading="lazy">
-            </div>
-            <div class="reason-card__content">
-              <h3 class="reason-card__title">専属メンターが<br>入学から稼げるまで伴走し<br>挫折させない万全のサポート</h3>
-              <p class="reason-card__text">入学してから稼げるようになるまで、専属のメンターがマンツーマンで伴走。挫折せずに最後まで学習できるよう、全力でサポートいたします。</p>
-            </div>
-          </article>
-          <!-- 理由2 -->
-          <article class="reason-card">
-            <div class="reason-card__number">
-              <span class="reason-card__num">02</span>
-              <span class="reason-card__label">Curriculum</span>
-            </div>
-            <div class="reason-card__image">
-              <img src="images/reason-2.jpg" alt="カリキュラム" loading="lazy">
-            </div>
-            <div class="reason-card__content">
-              <h3 class="reason-card__title">Web制作サービス<br>「びるどる」と提携し<br>卒業後の活動をサポート</h3>
-              <p class="reason-card__text">提携サービス「びるどる」が過去実際に受注した案件をもとにカリキュラムを作成しており、他のスクールではできない超実践的なスキル習得が可能です。そのため、卒業後はすぐに「びるどる」の案件を受けることができます。</p>
-            </div>
-          </article>
-          <!-- 理由3 -->
-          <article class="reason-card">
-            <div class="reason-card__number">
-              <span class="reason-card__num">03</span>
-              <span class="reason-card__label">Support</span>
-            </div>
-            <div class="reason-card__image">
-              <img src="images/reason-3.jpg" alt="サポート" loading="lazy">
-            </div>
-            <div class="reason-card__content">
-              <h3 class="reason-card__title">卒業後も一生続く<br>案件紹介・制作サポートで<br>安心して稼げる</h3>
-              <p class="reason-card__text">ChapterTwoでは卒業後も永続的にサポートしております。実際の案件の添削や相談もいつでも対応可能なので、卒業後もご安心ください。</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA セクション -->
-    <section class="cta-section cta-section--dark">
-      <div class="container">
-        <div class="cta-box cta-box--light">
-          <p class="cta-box__label">10秒で簡単予約！質問相談何でもOK！</p>
-          <a href="#contact" class="cta-box__btn">Zoom無料相談はこちら</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 案件獲得サポート -->
-    <section class="support" id="support">
-      <div class="support__bg"></div>
-      <div class="container">
-        <h2 class="section-title section-title--white">ChapterTwoの<br class="sp-only">案件獲得サポート</h2>
-        <div class="support__list">
-          <!-- サポート1 -->
-          <article class="support-card">
-            <div class="support-card__image">
-              <img src="images/support-1.jpg" alt="案件紹介" loading="lazy">
-              <span class="support-card__number">01</span>
-            </div>
-            <div class="support-card__content">
-              <h3 class="support-card__title">提携サイト「びるどる」<br>からの案件紹介</h3>
-              <p class="support-card__text">提携しているWebデザイン制作サービスの「びるどる」から案件を紹介するため、卒業後すぐに副業で稼ぎ始められます！</p>
-            </div>
-          </article>
-          <!-- サポート2 -->
-          <article class="support-card">
-            <div class="support-card__image">
-              <img src="images/support-2.jpg" alt="営業不要" loading="lazy">
-              <span class="support-card__number">02</span>
-            </div>
-            <div class="support-card__content">
-              <h3 class="support-card__title">営業は完全に不要</h3>
-              <p class="support-card__text">卒業生に紹介される案件は、受注までのクライアントワークをすべて「びるどる」が行って確実に受注に繋げるため、卒業生は営業不要で案件を獲得できる仕組みです。</p>
-            </div>
-          </article>
-          <!-- サポート3 -->
-          <article class="support-card">
-            <div class="support-card__image">
-              <img src="images/support-3.jpg" alt="制作サポート" loading="lazy">
-              <span class="support-card__number">03</span>
-            </div>
-            <div class="support-card__content">
-              <h3 class="support-card__title">サポートセンターが<br>制作を全面サポート</h3>
-              <p class="support-card__text">紹介された案件の進め方でわからない部分があれば、専門のサポートセンターが制作をサポートし、確実な納品と報酬の獲得をお手伝いします。</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 講師紹介 -->
-    <section class="instructor" id="instructor">
-      <div class="container">
-        <h2 class="section-title">講師紹介</h2>
-        <div class="instructor__slider" id="instructorSlider">
-          <button class="instructor__nav instructor__nav--prev" aria-label="前へ">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <polygon points="32,8 16,24 32,40" fill="currentColor"/>
-            </svg>
-          </button>
-          <div class="instructor__cards">
-            <!-- 講師1 -->
-            <article class="instructor-card">
-              <div class="instructor-card__header">
-                <div class="instructor-card__info">
-                  <h3 class="instructor-card__name">長田 圭二先生</h3>
-                  <p class="instructor-card__name-en">Nagata Keiji</p>
+            <div class="instructor__body">
+              <div>
+                <h4 class="instructor__section-title">経歴</h4>
+                <div class="instructor__divider"></div>
+                <div class="instructor__career-item">
+                  <span class="instructor__career-bullet"></span>
+                  <p class="instructor__career-text">新卒から約10年間東京の広告代理店に勤務。主にWeb広告の運用、メディアプランニングに従事。</p>
                 </div>
-                <div class="instructor-card__photo">
-                  <img src="images/instructor-1.jpg" alt="長田 圭二先生" loading="lazy">
+                <div class="instructor__career-item">
+                  <span class="instructor__career-bullet"></span>
+                  <p class="instructor__career-text">2019年より個人事業にて映像制作を開始。</p>
+                </div>
+                <div class="instructor__career-item">
+                  <span class="instructor__career-bullet"></span>
+                  <p class="instructor__career-text">現在はフリーランスとして大分県を拠点に、企業や店舗のPV・Web広告の企画、撮影、制作を中心に行いながら映画の制作にも携わっている。</p>
                 </div>
               </div>
-              <div class="instructor-card__body">
-                <div class="instructor-card__section">
-                  <h4 class="instructor-card__label">経歴</h4>
-                  <ul class="instructor-card__list">
-                    <li>新卒から約10年間東京の広告代理店に勤務。主にWeb広告の運用、メディアプランニングに従事。</li>
-                    <li>2019年より個人事業にて映像制作を開始。</li>
-                    <li>現在はフリーランスとして大分県を拠点に、企業や店舗のPV・Web広告の企画、撮影、制作を中心に行いながら映画の制作にも携わっている。</li>
-                  </ul>
-                </div>
-                <div class="instructor-card__section">
-                  <h4 class="instructor-card__label">メッセージ</h4>
-                  <p class="instructor-card__message">何か新しいことに挑戦する時にはそれなりのパワーと、勇気がいると思います。本講座で、仲間と一緒に学んでもらいながら少しでも皆さんの後押しができればと考えてます。一緒に全力で映像制作を楽しみましょう！</p>
-                </div>
+              <div>
+                <h4 class="instructor__section-title">メッセージ</h4>
+                <div class="instructor__divider"></div>
+                <p class="instructor__message">何か新しいことに挑戦する時にはそれなりのパワーと、勇気がいると思います。本講座で、仲間と一緒に学んでもらいながら少しでも皆さんの後押しができればと考えてます。一緒に全力で映像制作を楽しみましょう！</p>
               </div>
-            </article>
-            <!-- 講師2 -->
-            <article class="instructor-card">
-              <div class="instructor-card__header">
-                <div class="instructor-card__info">
-                  <h3 class="instructor-card__name">佐藤 美咲先生</h3>
-                  <p class="instructor-card__name-en">Sato Misaki</p>
-                </div>
-                <div class="instructor-card__photo">
-                  <img src="images/instructor-2.jpg" alt="佐藤 美咲先生" loading="lazy">
-                </div>
-              </div>
-              <div class="instructor-card__body">
-                <div class="instructor-card__section">
-                  <h4 class="instructor-card__label">経歴</h4>
-                  <ul class="instructor-card__list">
-                    <li>大手IT企業にてUIデザイナーとして5年間勤務。</li>
-                    <li>フリーランス転身後、100社以上のWebサイト制作を担当。</li>
-                    <li>現在は後進の育成にも力を入れ、スクール講師として活躍中。</li>
-                  </ul>
-                </div>
-                <div class="instructor-card__section">
-                  <h4 class="instructor-card__label">メッセージ</h4>
-                  <p class="instructor-card__message">デザインは誰でも学べるスキルです。大切なのは継続すること。一緒に楽しみながらスキルアップしていきましょう！</p>
-                </div>
-              </div>
-            </article>
+            </div>
           </div>
-          <button class="instructor__nav instructor__nav--next" aria-label="次へ">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <polygon points="16,8 32,24 16,40" fill="currentColor"/>
-            </svg>
-          </button>
+
+          <!-- Instructor 2 -->
+          <div class="instructor">
+            <div class="instructor__header">
+              <div class="instructor__info">
+                <h3 class="instructor__name">長田 圭二先生</h3>
+                <span class="instructor__name-en">Nagata Keiji</span>
+              </div>
+              <div class="instructor__image">
+                <img src="images/instructor-2.jpg" alt="長田 圭二先生">
+              </div>
+            </div>
+            <div class="instructor__body">
+              <div>
+                <h4 class="instructor__section-title">経歴</h4>
+                <div class="instructor__divider"></div>
+                <div class="instructor__career-item">
+                  <span class="instructor__career-bullet"></span>
+                  <p class="instructor__career-text">新卒から約10年間東京の広告代理店に勤務。主にWeb広告の運用、メディアプランニングに従事。</p>
+                </div>
+                <div class="instructor__career-item">
+                  <span class="instructor__career-bullet"></span>
+                  <p class="instructor__career-text">2019年より個人事業にて映像制作を開始。</p>
+                </div>
+                <div class="instructor__career-item">
+                  <span class="instructor__career-bullet"></span>
+                  <p class="instructor__career-text">現在はフリーランスとして大分県を拠点に、企業や店舗のPV・Web広告の企画、撮影、制作を中心に行いながら映画の制作にも携わっている。</p>
+                </div>
+              </div>
+              <div>
+                <h4 class="instructor__section-title">メッセージ</h4>
+                <div class="instructor__divider"></div>
+                <p class="instructor__message">何か新しいことに挑戦する時にはそれなりのパワーと、勇気がいると思います。本講座で、仲間と一緒に学んでもらいながら少しでも皆さんの後押しができればと考えてます。一緒に全力で映像制作を楽しみましょう！</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="instructor__dots">
-          <button class="instructor__dot instructor__dot--active" aria-label="1枚目"></button>
-          <button class="instructor__dot" aria-label="2枚目"></button>
-          <button class="instructor__dot" aria-label="3枚目"></button>
-          <button class="instructor__dot" aria-label="4枚目"></button>
+        <div class="instructors__arrow instructors__arrow--next">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M24 12L36 24L24 36" stroke="#bf5331" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
       </div>
-    </section>
+      <div class="instructors__pagination">
+        <span class="instructors__pagination-dot active"></span>
+        <span class="instructors__pagination-dot"></span>
+        <span class="instructors__pagination-dot"></span>
+        <span class="instructors__pagination-dot"></span>
+      </div>
+    </div>
+  </section>
 
-    <!-- コース・料金 -->
-    <section class="price" id="price">
-      <div class="container">
-        <h2 class="section-title">コース・料金</h2>
-        <div class="price__header">
-          <div class="price__monthly">
-            <span class="price__monthly-label">月額料金</span>
-            <div class="price__monthly-value">
-              <span class="price__amount">10,600円</span>
-              <span class="price__tilde">〜</span>
-              <span class="price__tax">（税込）</span>
-            </div>
-          </div>
-          <p class="price__note">※分割払いの料金について、詳しくはお問い合わせください。</p>
+  <!-- ========================================
+       CTA Banner Section 2
+       ======================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__bubbles">
+        <div class="cta-banner__bubble">
+          <p class="cta-banner__bubble-text">未経験からでも<br>大丈夫？</p>
         </div>
-        <div class="price__courses">
-          <!-- Basic -->
-          <article class="course-card">
-            <div class="course-card__header">
-              <span class="course-card__level">Basic</span>
-              <h3 class="course-card__name">デザイン基礎コース</h3>
-            </div>
-            <div class="course-card__divider"></div>
-            <div class="course-card__details">
-              <div class="course-card__item">
-                <svg class="course-card__icon" viewBox="0 0 33 33" fill="none">
-                  <path d="M5 5h23v23H5z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M10 12h13M10 17h13M10 22h8" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <span>学習期間：1ヶ月半</span>
-              </div>
-              <div class="course-card__item">
-                <svg class="course-card__icon" viewBox="0 0 33 33" fill="none">
-                  <path d="M16.5 5C10 5 5 10 5 16.5S10 28 16.5 28 28 23 28 16.5 23 5 16.5 5z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M12 16l4 4 6-8" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <span>サポート期間：1ヶ月</span>
-              </div>
-            </div>
-          </article>
-          <!-- Advanced -->
-          <article class="course-card course-card--featured">
-            <div class="course-card__header">
-              <span class="course-card__level">Advanced</span>
-              <h3 class="course-card__name">デザイン応用コース</h3>
-            </div>
-            <div class="course-card__divider"></div>
-            <div class="course-card__details">
-              <div class="course-card__item">
-                <svg class="course-card__icon" viewBox="0 0 33 33" fill="none">
-                  <path d="M5 5h23v23H5z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M10 12h13M10 17h13M10 22h8" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <span>学習期間：3ヶ月</span>
-              </div>
-              <div class="course-card__item">
-                <svg class="course-card__icon" viewBox="0 0 33 33" fill="none">
-                  <path d="M16.5 5C10 5 5 10 5 16.5S10 28 16.5 28 28 23 28 16.5 23 5 16.5 5z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M12 16l4 4 6-8" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <span>サポート期間：1ヶ月</span>
-              </div>
-            </div>
-          </article>
-          <!-- Pro -->
-          <article class="course-card">
-            <div class="course-card__header">
-              <span class="course-card__level">Pro</span>
-              <h3 class="course-card__name">デザインプロコース</h3>
-            </div>
-            <div class="course-card__divider"></div>
-            <div class="course-card__details">
-              <div class="course-card__item">
-                <svg class="course-card__icon" viewBox="0 0 33 33" fill="none">
-                  <path d="M5 5h23v23H5z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M10 12h13M10 17h13M10 22h8" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <span>学習期間：6ヶ月</span>
-              </div>
-              <div class="course-card__item">
-                <svg class="course-card__icon" viewBox="0 0 33 33" fill="none">
-                  <path d="M16.5 5C10 5 5 10 5 16.5S10 28 16.5 28 28 23 28 16.5 23 5 16.5 5z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M12 16l4 4 6-8" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <span>サポート期間：1ヶ月</span>
-              </div>
-            </div>
-          </article>
+        <div class="cta-banner__bubble">
+          <p class="cta-banner__bubble-text">自分には<br>どのコースが合ってる？</p>
         </div>
       </div>
-    </section>
+      <h2 class="cta-banner__title">無料相談実施中！</h2>
+      <div class="cta-banner__underline"></div>
+      <p class="cta-banner__subtitle">プロのカウンセラーになんでも相談可能！</p>
+      <div class="cta-button-wrapper">
+        <span class="cta-label">10秒で簡単予約！質問相談何でもOK！</span>
+        <a href="#" class="cta-button">Zoom無料相談はこちら</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- 入校～卒業後の活躍イメージ -->
-    <section class="timeline" id="timeline">
-      <div class="timeline__decoration">CHAPTER TWO</div>
-      <div class="container">
-        <h2 class="section-title">入校～卒業後の活躍イメージ</h2>
-        <div class="timeline__list">
-          <!-- Step 01 -->
-          <div class="timeline-item">
-            <div class="timeline-item__number">01</div>
-            <div class="timeline-item__content">
-              <div class="timeline-item__icon">
-                <svg viewBox="0 0 53 53" fill="none">
-                  <circle cx="26.5" cy="26.5" r="24" stroke="currentColor" stroke-width="2"/>
-                  <path d="M20 20h13v13H20z" stroke="currentColor" stroke-width="2"/>
-                  <circle cx="26.5" cy="15" r="3" fill="currentColor"/>
-                </svg>
-              </div>
-              <h3 class="timeline-item__title">カウンセラー面談</h3>
-              <p class="timeline-item__text">一人ひとりに合わせて、最適な学習プランとロードマップを組み立てていきます。</p>
-            </div>
-            <div class="timeline-item__connector"></div>
+  <!-- ========================================
+       Pricing Section
+       ======================================== -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2 class="section-title">コース・料金</h2>
+      <div class="pricing__price-box">
+        <span class="pricing__label">月額料金</span>
+        <div>
+          <span class="pricing__amount">10,600</span><span class="pricing__tax">円〜（税込）</span>
+        </div>
+      </div>
+      <p class="pricing__note">※分割払いの料金について、詳しくはお問い合わせください。</p>
+      <div class="pricing__courses">
+        <!-- Basic -->
+        <div class="course-card course-card--basic">
+          <div class="course-card__header">
+            <p class="course-card__level">Basic</p>
+            <h3 class="course-card__name">デザイン基礎コース</h3>
           </div>
-          <!-- Step 02 -->
-          <div class="timeline-item">
-            <div class="timeline-item__number">02</div>
-            <div class="timeline-item__content">
-              <div class="timeline-item__icon">
-                <svg viewBox="0 0 53 53" fill="none">
-                  <rect x="8" y="8" width="37" height="37" rx="4" stroke="currentColor" stroke-width="2"/>
-                  <path d="M18 22l6 6 10-12" stroke="currentColor" stroke-width="2"/>
-                </svg>
-              </div>
-              <h3 class="timeline-item__title">リアルタイム授業</h3>
-              <p class="timeline-item__text">週1回2時間程度、プロの講師から直接講義を受けられます。テキストや教材では中々理解が難しいポイントをわかりやすく丁寧に解説します。</p>
+          <div class="course-card__divider"></div>
+          <div class="course-card__details">
+            <div class="course-card__detail">
+              <img src="images/icon-book.svg" alt="" class="course-card__detail-icon">
+              <span class="course-card__detail-text">学習期間：1ヶ月半</span>
             </div>
-            <div class="timeline-item__connector"></div>
-          </div>
-          <!-- Step 03 -->
-          <div class="timeline-item">
-            <div class="timeline-item__number">03</div>
-            <div class="timeline-item__content">
-              <div class="timeline-item__icon">
-                <svg viewBox="0 0 53 53" fill="none">
-                  <path d="M10 40V15l16-8 16 8v25l-16 8-16-8z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M26 7v41M10 15l16 8 16-8" stroke="currentColor" stroke-width="2"/>
-                </svg>
-              </div>
-              <h3 class="timeline-item__title">課題提出</h3>
-              <p class="timeline-item__text">リアルタイム授業で習ったことをもとに、デザイン制作の課題をクリアにします。スキル習得期間はstep2とstep3を繰り返します。</p>
+            <div class="course-card__detail">
+              <img src="images/icon-handshake.svg" alt="" class="course-card__detail-icon">
+              <span class="course-card__detail-text">サポート期間：1ヶ月</span>
             </div>
-            <div class="timeline-item__connector"></div>
           </div>
-          <!-- Step 04 -->
-          <div class="timeline-item">
-            <div class="timeline-item__number">04</div>
-            <div class="timeline-item__content">
-              <div class="timeline-item__icon">
-                <svg viewBox="0 0 53 53" fill="none">
-                  <path d="M26.5 5L32 20h15l-12 9 5 15-13.5-10L13 54l5-15-12-9h15z" stroke="currentColor" stroke-width="2"/>
-                </svg>
-              </div>
-              <h3 class="timeline-item__title">卒業制作</h3>
-              <p class="timeline-item__text">これまでに習ったことを活かし、ポートフォリオづくりを兼ねて卒業制作を行います。講師から合格判定をもらえたら、卒業が可能です。</p>
+        </div>
+
+        <!-- Advanced -->
+        <div class="course-card course-card--advanced">
+          <div class="course-card__header">
+            <p class="course-card__level">Advanced</p>
+            <h3 class="course-card__name">デザイン応用コース</h3>
+          </div>
+          <div class="course-card__divider"></div>
+          <div class="course-card__details">
+            <div class="course-card__detail">
+              <img src="images/icon-book.svg" alt="" class="course-card__detail-icon">
+              <span class="course-card__detail-text">学習期間：3ヶ月</span>
             </div>
-            <div class="timeline-item__connector"></div>
-          </div>
-          <!-- Step 05 -->
-          <div class="timeline-item">
-            <div class="timeline-item__number">05</div>
-            <div class="timeline-item__content">
-              <div class="timeline-item__icon">
-                <svg viewBox="0 0 53 53" fill="none">
-                  <circle cx="26.5" cy="26.5" r="20" stroke="currentColor" stroke-width="2"/>
-                  <path d="M20 26l5 5 8-10" stroke="currentColor" stroke-width="3"/>
-                </svg>
-              </div>
-              <h3 class="timeline-item__title">認定バッジ獲得</h3>
-              <p class="timeline-item__text">卒業後は「びるどる」の認定バッジを獲得でき、認定パートナーとして案件紹介を受けられます。</p>
+            <div class="course-card__detail">
+              <img src="images/icon-handshake.svg" alt="" class="course-card__detail-icon">
+              <span class="course-card__detail-text">サポート期間：1ヶ月</span>
             </div>
-            <div class="timeline-item__connector"></div>
           </div>
-          <!-- Step 06 -->
-          <div class="timeline-item">
-            <div class="timeline-item__number">06</div>
-            <div class="timeline-item__content">
-              <div class="timeline-item__icon">
-                <svg viewBox="0 0 53 53" fill="none">
-                  <path d="M10 40c0-8 7-15 16.5-15S43 32 43 40" stroke="currentColor" stroke-width="2"/>
-                  <circle cx="26.5" cy="18" r="8" stroke="currentColor" stroke-width="2"/>
-                </svg>
-              </div>
-              <h3 class="timeline-item__title">商談</h3>
-              <p class="timeline-item__text">コンシェルジュの同席サポートのもと商談を行い、案件を実際に受注して報酬を受け取ることが可能です。</p>
+        </div>
+
+        <!-- Pro -->
+        <div class="course-card course-card--pro">
+          <div class="course-card__header">
+            <p class="course-card__level">Pro</p>
+            <h3 class="course-card__name">デザインプロコース</h3>
+          </div>
+          <div class="course-card__divider"></div>
+          <div class="course-card__details">
+            <div class="course-card__detail">
+              <img src="images/icon-book.svg" alt="" class="course-card__detail-icon">
+              <span class="course-card__detail-text">学習期間：6ヶ月</span>
             </div>
-            <div class="timeline-item__connector"></div>
-          </div>
-          <!-- Step 07 -->
-          <div class="timeline-item">
-            <div class="timeline-item__number">07</div>
-            <div class="timeline-item__content">
-              <div class="timeline-item__icon">
-                <svg viewBox="0 0 53 53" fill="none">
-                  <rect x="8" y="12" width="37" height="29" rx="2" stroke="currentColor" stroke-width="2"/>
-                  <path d="M8 20h37M18 12v-4M35 12v-4" stroke="currentColor" stroke-width="2"/>
-                </svg>
-              </div>
-              <h3 class="timeline-item__title">継続的な案件獲得</h3>
-              <p class="timeline-item__text">ご自身のキャパシティと相談しながら、「びるどる」から紹介を受けた案件を受注し、実績と報酬を獲得していきます。</p>
-            </div>
-            <div class="timeline-item__connector"></div>
-          </div>
-          <!-- Step 08 -->
-          <div class="timeline-item">
-            <div class="timeline-item__number">08</div>
-            <div class="timeline-item__content">
-              <div class="timeline-item__icon">
-                <svg viewBox="0 0 53 53" fill="none">
-                  <path d="M26.5 5v43M5 26.5h43" stroke="currentColor" stroke-width="2"/>
-                  <circle cx="26.5" cy="26.5" r="20" stroke="currentColor" stroke-width="2"/>
-                </svg>
-              </div>
-              <h3 class="timeline-item__title">案件獲得の幅を広げる</h3>
-              <p class="timeline-item__text">営業スキルを身につけると個人での受注や他のクラウドサービスからの案件受注も可能になります。※専用の営業講座あり</p>
+            <div class="course-card__detail">
+              <img src="images/icon-handshake.svg" alt="" class="course-card__detail-icon">
+              <span class="course-card__detail-text">サポート期間：1ヶ月</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CTA セクション -->
-    <section class="cta-section cta-section--primary">
-      <div class="container">
-        <div class="cta-box cta-box--large">
-          <p class="cta-box__label">10秒で簡単予約！質問相談何でもOK！</p>
-          <a href="#contact" class="cta-box__btn">Zoom無料相談はこちら</a>
+  <!-- ========================================
+       Journey Section
+       ======================================== -->
+  <section class="journey">
+    <span class="journey__bg-text">CHAPTER TWO</span>
+    <div class="container">
+      <h2 class="journey__title">入校～卒業後の活躍イメージ</h2>
+      <div class="journey__steps">
+        <!-- Step 1 -->
+        <div class="journey__step">
+          <div class="journey__step-box">
+            <span class="journey__step-number">01</span>
+            <div class="journey__step-info">
+              <img src="images/icon-counseling.svg" alt="" class="journey__step-icon">
+              <span class="journey__step-title">カウンセラー面談</span>
+            </div>
+            <p class="journey__step-text">一人ひとりに合わせて、最適な学習プランとロードマップを組み立てていきます。</p>
+          </div>
+        </div>
+        <div class="journey__arrow">
+          <svg viewBox="0 0 42 35" fill="none">
+            <path d="M21 35L0.547436 0.5L41.4526 0.5L21 35Z" fill="#ffffff"/>
+          </svg>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="journey__step">
+          <div class="journey__step-box">
+            <span class="journey__step-number">02</span>
+            <div class="journey__step-info">
+              <img src="images/icon-realtime.svg" alt="" class="journey__step-icon">
+              <span class="journey__step-title">リアルタイム授業</span>
+            </div>
+            <p class="journey__step-text">週1回2時間程度、プロの講師から直接講義を受けられます。テキストや教材では中々理解が難しいポイントをわかりやすく丁寧に解説します。</p>
+          </div>
+        </div>
+        <div class="journey__arrow">
+          <svg viewBox="0 0 42 35" fill="none">
+            <path d="M21 35L0.547436 0.5L41.4526 0.5L21 35Z" fill="#ffffff"/>
+          </svg>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="journey__step">
+          <div class="journey__step-box">
+            <span class="journey__step-number">03</span>
+            <div class="journey__step-info">
+              <img src="images/icon-task.svg" alt="" class="journey__step-icon">
+              <span class="journey__step-title">課題提出</span>
+            </div>
+            <p class="journey__step-text">リアルタイム授業で習ったことをもとに、デザイン制作の課題をクリアにします。スキル習得期間はstep2とstep3を繰り返します。</p>
+          </div>
+        </div>
+        <div class="journey__arrow">
+          <svg viewBox="0 0 42 35" fill="none">
+            <path d="M21 35L0.547436 0.5L41.4526 0.5L21 35Z" fill="#ffffff"/>
+          </svg>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="journey__step">
+          <div class="journey__step-box">
+            <span class="journey__step-number">04</span>
+            <div class="journey__step-info">
+              <img src="images/icon-graduation.svg" alt="" class="journey__step-icon">
+              <span class="journey__step-title">卒業制作</span>
+            </div>
+            <p class="journey__step-text">これまでに習ったことを活かし、ポートフォリオづくりを兼ねて卒業制作を行います。講師から合格判定をもらえたら、卒業が可能です。</p>
+          </div>
+        </div>
+        <div class="journey__arrow">
+          <svg viewBox="0 0 42 35" fill="none">
+            <path d="M21 35L0.547436 0.5L41.4526 0.5L21 35Z" fill="#ffffff"/>
+          </svg>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="journey__step">
+          <div class="journey__step-box">
+            <span class="journey__step-number">05</span>
+            <div class="journey__step-info">
+              <img src="images/icon-badge.svg" alt="" class="journey__step-icon">
+              <span class="journey__step-title">認定バッジ獲得</span>
+            </div>
+            <p class="journey__step-text">卒業後は「びるどる」の認定バッジを獲得でき、認定パートナーとして案件紹介を受けられます。</p>
+          </div>
+        </div>
+        <div class="journey__arrow">
+          <svg viewBox="0 0 42 35" fill="none">
+            <path d="M21 35L0.547436 0.5L41.4526 0.5L21 35Z" fill="#ffffff"/>
+          </svg>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="journey__step">
+          <div class="journey__step-box">
+            <span class="journey__step-number">06</span>
+            <div class="journey__step-info">
+              <img src="images/icon-meeting.svg" alt="" class="journey__step-icon">
+              <span class="journey__step-title">商談</span>
+            </div>
+            <p class="journey__step-text">コンシェルジュの同席サポートのもと商談を行い、案件を実際に受注して報酬を受け取ることが可能です。</p>
+          </div>
+        </div>
+        <div class="journey__arrow">
+          <svg viewBox="0 0 42 35" fill="none">
+            <path d="M21 35L0.547436 0.5L41.4526 0.5L21 35Z" fill="#ffffff"/>
+          </svg>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="journey__step">
+          <div class="journey__step-box">
+            <span class="journey__step-number">07</span>
+            <div class="journey__step-info">
+              <img src="images/icon-project.svg" alt="" class="journey__step-icon">
+              <span class="journey__step-title">継続的な案件獲得</span>
+            </div>
+            <p class="journey__step-text">ご自身のキャパシティと相談しながら、「びるどる」から紹介を受けた案件を受注し、実績と報酬を獲得していきます。</p>
+          </div>
+        </div>
+        <div class="journey__arrow">
+          <svg viewBox="0 0 42 35" fill="none">
+            <path d="M21 35L0.547436 0.5L41.4526 0.5L21 35Z" fill="#ffffff"/>
+          </svg>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="journey__step">
+          <div class="journey__step-box">
+            <span class="journey__step-number">08</span>
+            <div class="journey__step-info">
+              <img src="images/icon-expand.svg" alt="" class="journey__step-icon">
+              <span class="journey__step-title">案件獲得の幅を広げる</span>
+            </div>
+            <p class="journey__step-text">営業スキルを身につけると個人での受注や他のクラウドサービスからの案件受注も可能になります。※専用の営業講座あり</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 受講の流れ -->
-    <section class="process" id="flow">
-      <div class="container">
-        <h2 class="section-title">受講の流れ</h2>
-        <div class="process__list">
-          <!-- ステップ1 -->
-          <article class="process-card">
-            <div class="process-card__number">1</div>
-            <div class="process-card__icon">
-              <svg viewBox="0 0 79 78" fill="none">
-                <circle cx="39.5" cy="25" r="12" stroke="currentColor" stroke-width="2"/>
-                <path d="M20 65c0-11 8.5-20 19.5-20s19.5 9 19.5 20" stroke="currentColor" stroke-width="2"/>
-                <path d="M55 55l15 15M50 60l-10 10" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <div class="process-card__content">
-              <h3 class="process-card__title">無料カウンセリングに参加</h3>
-              <p class="process-card__text">無料カウンセリングに参加！<br>こちらから日程調整可能です！</p>
-            </div>
-          </article>
-          <!-- ステップ2 -->
-          <article class="process-card">
-            <div class="process-card__number">2</div>
-            <div class="process-card__icon">
-              <svg viewBox="0 0 78 79" fill="none">
-                <rect x="15" y="10" width="48" height="59" rx="2" stroke="currentColor" stroke-width="2"/>
-                <path d="M25 30h28M25 42h28M25 54h18" stroke="currentColor" stroke-width="2"/>
-                <path d="M50 50l15 15" stroke="currentColor" stroke-width="3"/>
-              </svg>
-            </div>
-            <div class="process-card__content">
-              <h3 class="process-card__title">受講申し込み</h3>
-              <p class="process-card__text">お申し込みが確認でき次第、<br>担当者からご連絡させていただきます。</p>
-            </div>
-          </article>
-          <!-- ステップ3 -->
-          <article class="process-card">
-            <div class="process-card__number">3</div>
-            <div class="process-card__icon">
-              <svg viewBox="0 0 79 79" fill="none">
-                <circle cx="25" cy="35" r="10" stroke="currentColor" stroke-width="2"/>
-                <circle cx="54" cy="35" r="10" stroke="currentColor" stroke-width="2"/>
-                <path d="M15 55c0-5.5 4.5-10 10-10s10 4.5 10 10M44 55c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="currentColor" stroke-width="2"/>
-                <path d="M35 40h9" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <div class="process-card__content">
-              <h3 class="process-card__title">受講開始</h3>
-              <p class="process-card__text">担当者がしっかりと<br>サポートさせていただきます。</p>
-            </div>
-          </article>
+  <!-- ========================================
+       CTA Banner Section 3
+       ======================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__bubbles">
+        <div class="cta-banner__bubble">
+          <p class="cta-banner__bubble-text">カリキュラムの<br>詳細を知りたい！</p>
+        </div>
+        <div class="cta-banner__bubble">
+          <p class="cta-banner__bubble-text">自分には<br>どのコースが合ってる？</p>
         </div>
       </div>
-    </section>
+      <h2 class="cta-banner__title">無料カウンセリングでは、<br>各コースのカリキュラム詳細もご案内！</h2>
+      <div class="cta-banner__underline" style="width: 676px;"></div>
+      <p class="cta-banner__subtitle">気になる疑問/相談は全てプロのカウンセラーが即解消！</p>
+      <div class="cta-button-wrapper">
+        <span class="cta-label">10秒で簡単予約！質問相談何でもOK！</span>
+        <a href="#" class="cta-button">Zoom無料相談はこちら</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- よくある質問 -->
-    <section class="faq" id="faq">
-      <div class="container">
-        <h2 class="section-title">よくある質問</h2>
-        <div class="faq__list">
-          <!-- Q1 -->
-          <article class="faq-item">
-            <div class="faq-item__question">
-              <span class="faq-item__q">Q</span>
-              <p class="faq-item__q-text">初心者だけど大丈夫ですか？</p>
-            </div>
-            <div class="faq-item__answer">
-              <span class="faq-item__a">A</span>
-              <p class="faq-item__a-text">大丈夫です！基本的なパソコンの操作方法がわかっていれば問題ありません。</p>
-            </div>
-          </article>
-          <!-- Q2 -->
-          <article class="faq-item">
-            <div class="faq-item__question">
-              <span class="faq-item__q">Q</span>
-              <p class="faq-item__q-text">働きながらでも大丈夫ですか？</p>
-            </div>
-            <div class="faq-item__answer">
-              <span class="faq-item__a">A</span>
-              <p class="faq-item__a-text">問題ありません。ほとんどの受講生が働きながら受講しております。授業に参加できなかった場合も毎回録画をお渡ししますので補うことができます。</p>
-            </div>
-          </article>
-          <!-- Q3 -->
-          <article class="faq-item">
-            <div class="faq-item__question">
-              <span class="faq-item__q">Q</span>
-              <p class="faq-item__q-text">営業が苦手ですが大丈夫ですか？</p>
-            </div>
-            <div class="faq-item__answer">
-              <span class="faq-item__a">A</span>
-              <p class="faq-item__a-text">最低限の営業レッスンを受講いただいた上で営業が得意な受講生と手を組んで仕事をされる方も多くいます。スクールが相性の良い方をご紹介させていただきます。</p>
-            </div>
-          </article>
-          <!-- Q4 -->
-          <article class="faq-item">
-            <div class="faq-item__question">
-              <span class="faq-item__q">Q</span>
-              <p class="faq-item__q-text">講座終了後もサポートはありますか？</p>
-            </div>
-            <div class="faq-item__answer">
-              <span class="faq-item__a">A</span>
-              <p class="faq-item__a-text">ございます！ChapterTwoでは卒業後も永続的にサポートしております。実際の案件の添削や相談もいつでも対応可能なので、卒業後もご安心ください。</p>
-            </div>
-          </article>
+  <!-- ========================================
+       Flow Section
+       ======================================== -->
+  <section id="flow" class="flow">
+    <div class="container">
+      <h2 class="section-title">受講の流れ</h2>
+      <div class="flow__list">
+        <!-- Flow Item 1 -->
+        <div class="flow__item">
+          <span class="flow__item-number">1</span>
+          <div class="flow__item-content">
+            <img src="images/icon-callcenter.svg" alt="" class="flow__item-icon">
+            <h3 class="flow__item-title">無料カウンセリングに参加</h3>
+            <p class="flow__item-text">無料カウンセリングに参加！<br><u>こちら</u>から日程調整可能です！</p>
+          </div>
+        </div>
+
+        <!-- Flow Item 2 -->
+        <div class="flow__item">
+          <span class="flow__item-number">2</span>
+          <div class="flow__item-content">
+            <img src="images/icon-sign.svg" alt="" class="flow__item-icon">
+            <h3 class="flow__item-title">受講申し込み</h3>
+            <p class="flow__item-text">お申し込みが確認でき次第、<br>担当者からご連絡させて<br>いただきます。</p>
+          </div>
+        </div>
+
+        <!-- Flow Item 3 -->
+        <div class="flow__item">
+          <span class="flow__item-number">3</span>
+          <div class="flow__item-content">
+            <img src="images/icon-handshake-alt.svg" alt="" class="flow__item-icon">
+            <h3 class="flow__item-title">受講開始</h3>
+            <p class="flow__item-text">担当者がしっかりと<br>サポートさせていただきます。</p>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- フッター -->
+  <!-- ========================================
+       FAQ Section
+       ======================================== -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section-title">よくある質問</h2>
+      <div class="faq__list">
+        <!-- FAQ 1 -->
+        <div class="faq__item">
+          <div class="faq__question">
+            <span class="faq__icon faq__icon--q">Q</span>
+            <p class="faq__question-text">初心者だけど大丈夫ですか？</p>
+          </div>
+          <div class="faq__answer">
+            <span class="faq__icon faq__icon--a">A</span>
+            <p class="faq__answer-text">大丈夫です！基本的なパソコンの操作方法がわかっていれば問題ありません。</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq__item">
+          <div class="faq__question">
+            <span class="faq__icon faq__icon--q">Q</span>
+            <p class="faq__question-text">働きながらでも大丈夫ですか？</p>
+          </div>
+          <div class="faq__answer">
+            <span class="faq__icon faq__icon--a">A</span>
+            <p class="faq__answer-text">問題ありません。ほとんどの受講生が働きながら受講しております。<br>授業に参加できなかった場合も毎回録画をお渡ししますので補うことができます。</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq__item">
+          <div class="faq__question">
+            <span class="faq__icon faq__icon--q">Q</span>
+            <p class="faq__question-text">営業が苦手ですが大丈夫ですか？</p>
+          </div>
+          <div class="faq__answer">
+            <span class="faq__icon faq__icon--a">A</span>
+            <p class="faq__answer-text">最低限の営業レッスンを受講いただいた上で営業が得意な受講生と手を組んで<br>仕事をされる方も多くいます。 スクールが相性の良い方をご紹介させていただきます。</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq__item">
+          <div class="faq__question">
+            <span class="faq__icon faq__icon--q">Q</span>
+            <p class="faq__question-text">講座終了後もサポートはありますか？</p>
+          </div>
+          <div class="faq__answer">
+            <span class="faq__icon faq__icon--a">A</span>
+            <p class="faq__answer-text">ございます！ChapterTwoでは卒業も永続的にサポートしております。<br>実際の案件の添削や相談もいつでも対応可能なので、卒業もご安心ください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Footer
+       ======================================== -->
   <footer class="footer">
     <div class="container">
-      <nav class="footer__nav">
-        <a href="#">特定商取引法に基づく表示</a>
-        <a href="#">運営者情報</a>
-        <a href="#">プライバシーポリシー</a>
-      </nav>
+      <div class="footer__links">
+        <a href="#" class="footer__link">特定商取引法に基づく表示</a>
+        <a href="#" class="footer__link">運営者情報</a>
+        <a href="https://well-beings.co.jp/company_infomation.html" class="footer__link" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+      </div>
       <p class="footer__copyright">© 2025 CHAPTER TWO Inc.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
