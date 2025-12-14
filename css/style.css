@@ -1926,6 +1926,7 @@ button {
 
   .pricing__courses {
     flex-direction: row;
+    justify-content: center;
     gap: 1.875rem;
   }
 
