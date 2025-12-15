@@ -235,7 +235,7 @@ button {
   z-index: 0;
 }
 
-/* 左侧背景图容器 */
+/* 左侧背景图容器 - 桌面端显示，宽度 646/1440 = 44.86% */
 .hero__bg-container--left {
   display: none;
   position: absolute;
@@ -244,23 +244,28 @@ button {
   width: 44.86%;
   height: 100%;
   overflow: hidden;
+  z-index: 2;
 }
 
-/* 右侧背景图容器 */
+/* 右侧背景图容器 - 移动端全宽，桌面端从 238/1440 = 16.53% 开始，宽度 1202/1440 = 83.47% */
 .hero__bg-container--right {
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 1;
 }
 
 .hero__bg-image {
   position: absolute;
   object-fit: cover;
+  max-width: none;
 }
 
+/* 左侧图片定位 - 相对容器的百分比偏移 */
 .hero__bg-image--left {
   display: none;
   left: -26.2%;
@@ -269,13 +274,14 @@ button {
   height: 135.11%;
 }
 
+/* 移动端：右侧图片居中显示 */
 .hero__bg-image--right {
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0;
-  left: auto;
-  width: 100%;
+  width: 150%;
   height: 100%;
-  object-position: center;
+  object-position: center top;
 }
 
 .hero__bg-overlay {
@@ -286,21 +292,44 @@ button {
   width: 7.125rem;
   height: 100%;
   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #ffffff 51.92%, rgba(255,255,255,0) 100%);
+  z-index: 3;
+}
+
+/* Hero 内容区域背景形状 */
+.hero__content-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero__content-shape svg {
+  width: 100%;
+  height: 100%;
 }
 
 .hero__content {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url('../images/hero-content-bg.svg') center/contain no-repeat;
-  padding: 4rem 6.5rem;
   width: 37.5625rem;
   height: 32.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__content-inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
+  padding: 4rem 6.5rem;
 }
 
 .hero__badge-wrapper {
@@ -546,7 +575,7 @@ button {
   padding: 0.3125rem 0.625rem;
   font-size: 2.125rem;
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.106rem;
   display: inline-block;
 }
 
@@ -561,7 +590,7 @@ button {
   font-size: 2.125rem;
   font-weight: 700;
   color: var(--black);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.106rem;
 }
 
 .about__image {
@@ -890,7 +919,7 @@ button {
   font-size: clamp(1.125rem, 4vw, 1.5rem);
   font-weight: 700;
   letter-spacing: 0.075rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .reason__text {
@@ -967,7 +996,7 @@ button {
    Support Section - Mobile First
    ======================================== */
 .support {
-  padding: 4rem 0;
+  padding: 7.5rem 0 5rem;
   background-color: var(--white);
   position: relative;
   overflow: hidden;
@@ -998,8 +1027,8 @@ button {
   font-weight: 700;
   color: var(--white);
   text-align: center;
-  letter-spacing: 0.1rem;
-  margin-bottom: 2rem;
+  letter-spacing: 0.1125rem;
+  margin-bottom: 2.5rem;
 }
 
 .support__list {
@@ -1013,7 +1042,7 @@ button {
 
 .support__item {
   width: 100%;
-  max-width: 20rem;
+  max-width: 19.9375rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -1041,6 +1070,7 @@ button {
   font-size: clamp(1.5rem, 6vw, 2.625rem);
   font-weight: 700;
   color: var(--white);
+  line-height: 1;
 }
 
 .support__item-content {
@@ -1059,7 +1089,7 @@ button {
 .support__item-text {
   font-size: clamp(0.875rem, 3vw, 1rem);
   color: var(--white);
-  line-height: 1.6;
+  line-height: 1.5;
   letter-spacing: 0.03rem;
 }
 
@@ -1219,7 +1249,7 @@ button {
    Pricing Section - Mobile First
    ======================================== */
 .pricing {
-  padding: var(--section-padding-mobile);
+  padding: 5rem 0;
   background-color: var(--gray);
 }
 
@@ -1312,13 +1342,6 @@ button {
   flex-shrink: 0;
   width: 100%;
   max-width: 23.75rem;
-}
-
-@media (min-width: 768px) {
-  .course-card {
-    width: auto;
-    max-width: none;
-  }
 }
 
 .course-card--basic {
@@ -1729,20 +1752,26 @@ button {
   }
 
   .hero__bg-container--right {
+    left: 16.53%;
+    right: auto;
     width: 83.47%;
   }
 
   .hero__bg-image--left {
     display: block;
+    left: -26.2%;
+    top: -8.4%;
+    width: 164.32%;
+    height: 135.11%;
   }
 
   .hero__bg-image--right {
+    left: -34.92%;
+    transform: none;
+    top: -0.31%;
     width: 150.67%;
     height: 126.82%;
-    left: auto;
-    right: 0;
-    top: -0.31%;
-    object-position: right top;
+    object-position: unset;
   }
 
   .hero__bg-overlay {
@@ -1750,9 +1779,12 @@ button {
   }
 
   .hero__content {
-    padding: 4rem 6.44rem;
     width: 37.5625rem;
     height: 32.75rem;
+  }
+
+  .hero__content-inner {
+    padding: 4rem 6.44rem;
   }
 
   .hero__features {
