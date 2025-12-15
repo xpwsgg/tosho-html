@@ -1114,7 +1114,7 @@ button {
    Support Section - Mobile First
    ======================================== */
 .support {
-  padding: 7.5rem 0 5rem;
+  padding: 10rem 0 7.5rem; /* 增加上下 padding：顶部从 7.5rem 增加到 10rem，底部从 5rem 增加到 7.5rem */
   background-color: var(--white);
   position: relative;
   overflow: hidden;
@@ -2068,7 +2068,7 @@ button {
 
   /* Support */
   .support {
-    padding: 7.5rem 0 5rem;
+    padding: 12rem 0 10rem; /* 桌面端进一步增加上下 padding */
   }
 
   .support__list {
