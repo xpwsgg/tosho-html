@@ -337,13 +337,13 @@ button {
   position: relative;
   margin-bottom: 0;
   width: 22.93rem; /* 366.897px */
-  height: 5.69rem; /* 约 91.11px (32.84 + 58.27) */
+  height: 5.69rem; /* 91.11px */
 }
 
 .hero__dots {
   position: absolute;
   top: 0;
-  left: 13.09rem; /* 209.49px */
+  left: 13.09rem; /* 209.49px - 固定位置，不是居中 */
   font-size: 1.7rem; /* 27.178px */
   font-weight: 700;
   background: var(--gradient-orange);
@@ -367,22 +367,37 @@ button {
 
 .hero__badge-text {
   position: absolute;
-  top: 1.49rem; /* 23.78px */
+  top: 1.49rem; /* 23.78px - 文字容器顶部位置 */
   left: 1.13rem; /* 18.11px */
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  gap: 0;
-  font-size: 1.42rem; /* 22.648px */
   font-weight: 700;
   color: var(--white);
   white-space: nowrap;
   z-index: 20;
+  line-height: 1;
+}
+
+.hero__badge-text span:first-child {
+  position: absolute;
+  left: 0;
+  top: 0.99rem; /* 15.85px */
+  font-size: 1.416rem; /* 22.648px */
+  line-height: 1;
 }
 
 .hero__support-highlight {
-  font-size: 2.4rem; /* 38.502px */
-  margin: 0 -0.1rem;
+  position: absolute;
+  left: 11.678rem; /* 186.85px */
+  top: -0.2rem; /* 向上偏移，让"生"字超出红色背景 */
+  font-size: 2.406rem; /* 38.502px */
+  line-height: 1;
+}
+
+.hero__badge-text span:last-child {
+  position: absolute;
+  left: 16.703rem; /* 267.25px */
+  top: 0.99rem; /* 15.85px */
+  font-size: 1.416rem; /* 22.648px */
+  line-height: 1;
 }
 
 .hero__subtitle {
