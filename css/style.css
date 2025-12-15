@@ -390,6 +390,15 @@ button {
   top: -0.2rem; /* 向上偏移，让"生"字超出红色背景 */
   font-size: 2.406rem; /* 38.502px */
   line-height: 1;
+  text-shadow:
+    -2px -2px 0 var(--primary-orange),
+    2px -2px 0 var(--primary-orange),
+    -2px 2px 0 var(--primary-orange),
+    2px 2px 0 var(--primary-orange),
+    -2px 0 0 var(--primary-orange),
+    2px 0 0 var(--primary-orange),
+    0 -2px 0 var(--primary-orange),
+    0 2px 0 var(--primary-orange); /* 更粗的红色描边效果 */
 }
 
 .hero__badge-text span:last-child {
