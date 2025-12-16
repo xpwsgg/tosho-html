@@ -25,4 +25,4 @@ tosho-html/
 ## 🎨 Figma 设计稿
 
 **设计稿链接：
-** [ChapterTwo びるどるLP](https://www.figma.com/design/aIHjHkeOnmdQDjw0Nsa7uB/%E3%80%90%E7%B4%8D%E5%93%81%E7%94%A8%E3%80%91ChapterTwo-%E3%81%B3%E3%82%8B%E3%81%A9%E3%82%8BLP--Copy-)
+** [https://www.figma.com/design/GDyEL7bwH0jPkqupbuHcYw/%E3%80%90%E7%B4%8D%E5%93%81%E7%94%A8%E3%80%91ChapterTwo-%E3%81%B3%E3%82%8B%E3%81%A9%E3%82%8BLP?node-id=0-1&p=f]
