@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3944e2d8-10ce-4713-be66-bfeb40d2a529" name="Changes" comment="style(css): 调整支持区块上下内边距以优化布局">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;xpwsgg&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/xpwsgg/tosho-html.git&quot;,
+    &quot;accountId&quot;: &quot;ce5a090f-ad68-4fa2-abce-3dea0d18503d&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="36ok1J2TBkgAfjRgFpcX45inj4N" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MTTitleBarConfigurable",
+    "ts.external.directory.path": "/Users/xiao/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3944e2d8-10ce-4713-be66-bfeb40d2a529" name="Changes" comment="" />
+      <created>1765680095525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765680095525</updated>
+      <workItem from="1765680096754" duration="86000" />
+      <workItem from="1765680191659" duration="19102000" />
+      <workItem from="1765795829927" duration="7385000" />
+      <workItem from="1765887402419" duration="2392000" />
+    </task>
+    <task id="LOCAL-00001" summary="refactor(html): 优化页面">
+      <option name="closed" value="true" />
+      <created>1765695067323</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765695067323</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor(html): 60">
+      <option name="closed" value="true" />
+      <created>1765696428362</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765696428362</updated>
+    </task>
+    <task id="LOCAL-00003" summary="style(reasons): 美化原因区块文本及样式">
+      <option name="closed" value="true" />
+      <created>1765697752409</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765697752409</updated>
+    </task>
+    <task id="LOCAL-00004" summary="style(pricing): 调整价格展示样式和课程卡片布局">
+      <option name="closed" value="true" />
+      <created>1765698827618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765698827618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="style(flow): 优化流程区样式布局和尺寸">
+      <option name="closed" value="true" />
+      <created>1765699255599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765699255599</updated>
+    </task>
+    <task id="LOCAL-00006" summary="style(cta-banner): 优化CTA横幅视觉样式和排版">
+      <option name="closed" value="true" />
+      <created>1765699580799</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765699580799</updated>
+    </task>
+    <task id="LOCAL-00007" summary="style(cta-banner): 优化cta-banner样式及气泡组件结构">
+      <option name="closed" value="true" />
+      <created>1765700514600</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765700514600</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(nav): 添加移动端汉堡菜单交互和导航平滑滚动功能">
+      <option name="closed" value="true" />
+      <created>1765701022994</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765701022994</updated>
+    </task>
+    <task id="LOCAL-00009" summary="style(hero): 优化hero区背景图结构与样式">
+      <option name="closed" value="true" />
+      <created>1765702111918</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1765702111918</updated>
+    </task>
+    <task id="LOCAL-00010" summary="style(css): 调整右侧背景图的定位和尺寸样式">
+      <option name="closed" value="true" />
+      <created>1765702488430</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1765702488430</updated>
+    </task>
+    <task id="LOCAL-00011" summary="style(about): 优化关于页面样式及布局">
+      <option name="closed" value="true" />
+      <created>1765703212340</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1765703212340</updated>
+    </task>
+    <task id="LOCAL-00012" summary="style(css): 优化关于页面背景图展示方式">
+      <option name="closed" value="true" />
+      <created>1765704073228</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1765704073228</updated>
+    </task>
+    <task id="LOCAL-00013" summary="style(css): 修改多个组件背景色为白色">
+      <option name="closed" value="true" />
+      <created>1765711155241</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765711155241</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(ui): 优化推荐语和CTA下划线样式">
+      <option name="closed" value="true" />
+      <created>1765712113824</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765712113824</updated>
+    </task>
+    <task id="LOCAL-00015" summary="style(icons): 优化咨询图标SVG并调整步骤数字样式">
+      <option name="closed" value="true" />
+      <created>1765713064781</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1765713064781</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor(ui): 将journey箭头svg替换为图片引用">
+      <option name="closed" value="true" />
+      <created>1765713309333</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1765713309333</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refactor(ui): 增加图标资源">
+      <option name="closed" value="true" />
+      <created>1765716677725</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1765716677725</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor(icons): 重构并优化多个SVG图标文件">
+      <option name="closed" value="true" />
+      <created>1765718428185</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1765718428185</updated>
+    </task>
+    <task id="LOCAL-00019" summary="style(footer): 调整页脚间距与字体样式">
+      <option name="closed" value="true" />
+      <created>1765718894332</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1765718894332</updated>
+    </task>
+    <task id="LOCAL-00020" summary="style(cta-banner): 调整背景位置和气泡样式">
+      <option name="closed" value="true" />
+      <created>1765719236722</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1765719236722</updated>
+    </task>
+    <task id="LOCAL-00021" summary="style(css): 居中排列课程定价布局">
+      <option name="closed" value="true" />
+      <created>1765719442595</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1765719442595</updated>
+    </task>
+    <task id="LOCAL-00022" summary="style(cta-banner): 添加 cta-banner--alt 样式及灰色阴影">
+      <option name="closed" value="true" />
+      <created>1765719794812</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1765719794812</updated>
+    </task>
+    <task id="LOCAL-00023" summary="style(css): 删除无用的 .support__bg-text 样式">
+      <option name="closed" value="true" />
+      <created>1765720002752</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1765720002752</updated>
+    </task>
+    <task id="LOCAL-00024" summary="style(css): 更新 support 区块背景样式并添加背景图">
+      <option name="closed" value="true" />
+      <created>1765720468883</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1765720468884</updated>
+    </task>
+    <task id="LOCAL-00025" summary="style(css): 优化背景渐变色为纯色">
+      <option name="closed" value="true" />
+      <created>1765720716559</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1765720716559</updated>
+    </task>
+    <task id="LOCAL-00026" summary="style(css): 调整背景定位和修改推荐部分背景色">
+      <option name="closed" value="true" />
+      <created>1765721811340</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1765721811340</updated>
+    </task>
+    <task id="LOCAL-00027" summary="style(hero): 优化首页 hero 区域样式和结构">
+      <option name="closed" value="true" />
+      <created>1765798625415</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1765798625415</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat(images): 更新图标为矢量SVG格式并添加新资产">
+      <option name="closed" value="true" />
+      <created>1765799207283</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1765799207283</updated>
+    </task>
+    <task id="LOCAL-00029" summary="style(hero): 优化英雄区徽章布局和样式">
+      <option name="closed" value="true" />
+      <created>1765810679554</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1765810679554</updated>
+    </task>
+    <task id="LOCAL-00030" summary="style(css): 优化首页徽章文本和支持高亮样式">
+      <option name="closed" value="true" />
+      <created>1765811233798</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1765811233798</updated>
+    </task>
+    <task id="LOCAL-00031" summary="style(css): 添加更粗的红色描边效果">
+      <option name="closed" value="true" />
+      <created>1765811617830</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1765811617830</updated>
+    </task>
+    <task id="LOCAL-00032" summary="refactor(assets): 删除多余的SVG图像资源文件&#10;&#10;- 移除多处无用的SVG文件，减小项目体积&#10;- 清理重复和未被引用的图标资源&#10;- 优化资源目录结构，便于后续维护&#10;- 减少打包时的冗余静态资源加载&#10;- 提升整体项目的性能表现和加载速度">
+      <option name="closed" value="true" />
+      <created>1765812466569</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1765812466569</updated>
+    </task>
+    <task id="LOCAL-00033" summary="style(css): 调整支持区块上下内边距以优化布局">
+      <option name="closed" value="true" />
+      <created>1765812625752</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1765812625753</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="style(hero): 优化hero区背景图结构与样式" />
+    <MESSAGE value="style(css): 调整右侧背景图的定位和尺寸样式" />
+    <MESSAGE value="style(about): 优化关于页面样式及布局" />
+    <MESSAGE value="style(css): 优化关于页面背景图展示方式" />
+    <MESSAGE value="style(css): 修改多个组件背景色为白色" />
+    <MESSAGE value="feat(ui): 优化推荐语和CTA下划线样式" />
+    <MESSAGE value="style(icons): 优化咨询图标SVG并调整步骤数字样式" />
+    <MESSAGE value="refactor(ui): 将journey箭头svg替换为图片引用" />
+    <MESSAGE value="refactor(ui): 增加图标资源" />
+    <MESSAGE value="refactor(icons): 重构并优化多个SVG图标文件" />
+    <MESSAGE value="style(footer): 调整页脚间距与字体样式" />
+    <MESSAGE value="style(cta-banner): 调整背景位置和气泡样式" />
+    <MESSAGE value="style(css): 居中排列课程定价布局" />
+    <MESSAGE value="style(cta-banner): 添加 cta-banner--alt 样式及灰色阴影" />
+    <MESSAGE value="style(css): 删除无用的 .support__bg-text 样式" />
+    <MESSAGE value="style(css): 更新 support 区块背景样式并添加背景图" />
+    <MESSAGE value="style(css): 优化背景渐变色为纯色" />
+    <MESSAGE value="style(css): 调整背景定位和修改推荐部分背景色" />
+    <MESSAGE value="style(hero): 优化首页 hero 区域样式和结构" />
+    <MESSAGE value="feat(images): 更新图标为矢量SVG格式并添加新资产" />
+    <MESSAGE value="style(hero): 优化英雄区徽章布局和样式" />
+    <MESSAGE value="style(css): 优化首页徽章文本和支持高亮样式" />
+    <MESSAGE value="style(css): 添加更粗的红色描边效果" />
+    <MESSAGE value="refactor(assets): 删除多余的SVG图像资源文件&#10;&#10;- 移除多处无用的SVG文件，减小项目体积&#10;- 清理重复和未被引用的图标资源&#10;- 优化资源目录结构，便于后续维护&#10;- 减少打包时的冗余静态资源加载&#10;- 提升整体项目的性能表现和加载速度" />
+    <MESSAGE value="style(css): 调整支持区块上下内边距以优化布局" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(css): 调整支持区块上下内边距以优化布局" />
+  </component>
+</project>
