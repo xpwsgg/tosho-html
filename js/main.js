@@ -115,4 +115,190 @@
   } else {
     init();
   }
+
+  /**
+   * 滚动进度指示器（仅移动端）
+   */
+  function initScrollIndicator() {
+    const indicator = document.getElementById('scrollIndicator');
+    if (!indicator) return;
+
+    const progress = indicator.querySelector('.scroll-indicator__progress');
+
+    function updateProgress() {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+      progress.style.width = scrollPercent + '%';
+
+      if (scrollTop > 100) {
+        indicator.classList.add('visible');
+      } else {
+        indicator.classList.remove('visible');
+      }
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          updateProgress();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    updateProgress();
+  }
+
+  /**
+   * 图片懒加载功能
+   */
+  function initLazyLoad() {
+    const lazyImages = document.querySelectorAll('img.lazy');
+
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+            img.classList.add('lazy-loaded');
+            imageObserver.unobserve(img);
+          }
+        });
+      }, {
+        rootMargin: '50px 0px',
+        threshold: 0.01
+      });
+
+      lazyImages.forEach(function(img) {
+        imageObserver.observe(img);
+      });
+    } else {
+      lazyImages.forEach(function(img) {
+        img.src = img.dataset.src;
+        img.classList.remove('lazy');
+      });
+    }
+  }
+
+  /**
+   * 讲师轮播功能
+   */
+  function initInstructorCarousel() {
+    const carousel = document.getElementById('instructorsCarousel');
+    if (!carousel) return;
+
+    const prevBtn = document.querySelector('.instructors__arrow--prev');
+    const nextBtn = document.querySelector('.instructors__arrow--next');
+    const pagination = document.getElementById('instructorsPagination');
+    if (!pagination) return;
+
+    const paginationDots = pagination.querySelectorAll('.instructors__pagination-dot');
+    const instructors = carousel.querySelectorAll('.instructor');
+
+    let currentIndex = 0;
+    const totalInstructors = instructors.length;
+
+    function updateCarousel() {
+      const instructorWidth = instructors[0].offsetWidth;
+      const gap = 32;
+      const offset = -(currentIndex * (instructorWidth + gap));
+
+      carousel.style.transform = 'translateX(' + offset + 'px)';
+
+      paginationDots.forEach(function(dot, index) {
+        if (index === currentIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+
+      if (prevBtn && nextBtn) {
+        prevBtn.style.opacity = currentIndex === 0 ? '0.3' : '0.6';
+        prevBtn.style.cursor = currentIndex === 0 ? 'not-allowed' : 'pointer';
+        nextBtn.style.opacity = currentIndex === totalInstructors - 1 ? '0.3' : '0.6';
+        nextBtn.style.cursor = currentIndex === totalInstructors - 1 ? 'not-allowed' : 'pointer';
+      }
+    }
+
+    function prevInstructor() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    }
+
+    function nextInstructor() {
+      if (currentIndex < totalInstructors - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    }
+
+    function goToInstructor(index) {
+      currentIndex = index;
+      updateCarousel();
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', prevInstructor);
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', nextInstructor);
+    }
+
+    paginationDots.forEach(function(dot, index) {
+      dot.addEventListener('click', function() {
+        goToInstructor(index);
+      });
+    });
+
+    let startX = 0;
+    let isDragging = false;
+
+    carousel.addEventListener('touchstart', function(e) {
+      startX = e.touches[0].clientX;
+      isDragging = true;
+    });
+
+    carousel.addEventListener('touchmove', function(e) {
+      if (!isDragging) return;
+      e.preventDefault();
+    }, { passive: false });
+
+    carousel.addEventListener('touchend', function(e) {
+      if (!isDragging) return;
+
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          nextInstructor();
+        } else {
+          prevInstructor();
+        }
+      }
+
+      isDragging = false;
+    });
+
+    updateCarousel();
+  }
+
+  // 初始化所有功能
+  if (window.innerWidth < 768) {
+    initScrollIndicator();
+  }
+  initLazyLoad();
+  initInstructorCarousel();
+
 })();
