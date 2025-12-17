@@ -5,7 +5,9 @@
 
 ```
 tosho-html/
-├── index.html              # 主页面（单页应用）
+├── index.html              # 默认预览页面
+├── pc.html              # PC模式页面
+├── sp.html              # SP模式页面
 ├── css/
 │   └── style.css           # 主样式文件（Mobile First）
 ├── js/
